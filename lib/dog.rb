@@ -6,6 +6,8 @@ class Dog
     @@dogs << self
   end
   
+  attr_accessor :name
+  
   def self.all
     puts @@all.collect {|dog| dog.name}
   end
